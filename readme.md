@@ -12,31 +12,37 @@ This project uses **Grad-CAM** over a pre-trained **ResNet50** model to generate
 
 ### Clone the repository
 
-```bash
 git clone https://github.com/shecodes1912/LesionXAI.git
+
 cd LesionXAI
 
-###Install dependencies
+### Install dependencies
 pip install -r requirements.txt
 
-###Dataset
+### Dataset
  used the annotated leaf disease segmentation dataset available: https://github.com/neeek2303/Leaf-diseases-segmentation
 
-###How to Run the Pipeline
+### How to Run the Pipeline
 From the root folder, run:
 
 
 python src/main.py
+
 This will:
 
 Load the dataset
+
 Generate Grad-CAM heatmaps
+
 Threshold to binary masks
+
 Compute IoU with ground truth
+
 Save visualizations to results/visualisations/
+
 Save scores to results/metrics.csv
 
-###Acknowledgment
+### Acknowledgment
 Special thanks to Neurostack for the opportunity to build this research-grade project and explore explainability in AI. This work further fueled my passion for applying AI to real-world scientific problems.
 
 ### License
